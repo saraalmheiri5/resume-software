@@ -19,7 +19,8 @@ jobs:
         run: npm install
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
-        with:
+      with:
         app-name: Resume-software-eng
         publish-profile: ${{ AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: .
+        
